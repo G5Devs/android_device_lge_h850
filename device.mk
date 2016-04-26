@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += devie/lge/h850/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \
-    devie/lge/h850/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
+    device/lge/h850/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
 
 # Common G5
 $(call inherit-product, device/lge/g5-common/g5.mk)
