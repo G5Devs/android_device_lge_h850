@@ -21,6 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from h850 device
 $(call inherit-product, device/lge/h850/device.mk)
 
+# Inherit proprietary blobs
+$(call inherit-product-if-exists, vendor/lge/h850/h850-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/h850/h850-vendor-blobs.mk)
+$(call inherit-product-if-exists, vendor/lge/g5-common/g5-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/g5-common/g5-common-vendor-blobs.mk)
+
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h850
 PRODUCT_NAME := full_h850
